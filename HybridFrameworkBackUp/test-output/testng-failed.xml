@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="testcases.TestUserPage">
+        <methods>
+          <include name="addResultToReport"/>
+          <include name="deleteUsers"/>
+          <include name="createUser" invocation-numbers="0 1"/>
+          <include name="startBrowserSession"/>
+          <include name="setUpReport"/>
+        </methods>
+      </class> <!-- testcases.TestUserPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
