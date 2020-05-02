@@ -28,6 +28,11 @@ import org.testng.Reporter;
 
 public class Helper {
 	
+	public void testMethodForGit()
+	{
+		System.out.println("A Test Method..");
+	}
+	
 /*	public static void selectCalendarDateMMMyyyy(WebDriver driver,By monthYearLocator,By previousMonthLocator,By nextMonthLocator,By allDatesLocator, String monthInMMMyyyy,String day,String stepInfo)
 	{
 		
