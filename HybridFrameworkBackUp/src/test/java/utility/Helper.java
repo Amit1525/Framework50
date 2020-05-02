@@ -9,6 +9,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -31,6 +32,16 @@ public class Helper {
 	public void testMethodForGit()
 	{
 		System.out.println("A Test Method..");
+	}
+	
+	public static String generateARandomAlphabeticString(int numberOfCharaNeededInAString)
+	{
+		return RandomStringUtils.randomAlphabetic(numberOfCharaNeededInAString);
+	}
+	
+	public static String generateARandomAlphanumericString(int numberOfCharaNeededInAString)
+	{
+		return RandomStringUtils.randomAlphabetic(numberOfCharaNeededInAString);
 	}
 	
 /*	public static void selectCalendarDateMMMyyyy(WebDriver driver,By monthYearLocator,By previousMonthLocator,By nextMonthLocator,By allDatesLocator, String monthInMMMyyyy,String day,String stepInfo)
