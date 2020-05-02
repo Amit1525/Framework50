@@ -22,7 +22,7 @@ public class TestDashboardPage extends BaseClass{
 	@Test(priority = 2, dataProvider = "excelAppData", dataProviderClass = DataProviderClassExcel.class)
 	public void assignLeaveToEmployee(String EmpName, String userName, String password)
 	{
-		logger = reports.createTest("Assign Leaves Report");
+		logger = reports.createTest("Assign New Leaves Report");
 		
 		dashboard = PageFactory.initElements(driver, DashboardPage.class);
 		login = PageFactory.initElements(driver, LoginPage.class);
@@ -33,7 +33,7 @@ public class TestDashboardPage extends BaseClass{
 	@Test(priority = 1)
 	public void clearLeaves()
 	{
-		logger = reports.createTest("Clear Leaves Report");
+		logger = reports.createTest("Clear Already Created Leaves Report");
 		dashboard = PageFactory.initElements(driver, DashboardPage.class);
 		login = PageFactory.initElements(driver, LoginPage.class);
 		login.signIntoApplication(DataProviderFactory.getExcel().getCellData("Admin", 0, 0), DataProviderFactory.getExcel().getCellData("Admin", 0, 1));

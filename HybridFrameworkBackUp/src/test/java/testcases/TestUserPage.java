@@ -18,7 +18,7 @@ public class TestUserPage extends BaseClass{
 	@Test(priority = 1, dataProvider = "excelAppData", dataProviderClass = DataProviderClassExcel.class)
 	public void createUser(String EmpName, String userName, String password)
 	{
-		 logger = reports.createTest("Regression Test - Create User");
+		 logger = reports.createTest("Regression Test - Create User Test");
 		
 		 login = PageFactory.initElements(driver, LoginPage.class);
 		 user = PageFactory.initElements(driver, UserPage.class);
@@ -34,6 +34,7 @@ public class TestUserPage extends BaseClass{
 	@Test(priority = 2, dataProvider = "excelAppData", dataProviderClass = DataProviderClassExcel.class)
 	public void deleteUsers(String EmpName, String userName, String password)
 	{
+		logger = reports.createTest("Regression Test - Delete the Created User Test");
 		login.signIntoApplication(DataProviderFactory.getExcel().getCellData("Admin", 0, 0), DataProviderFactory.getExcel().getCellData("Admin", 0, 1));
 		user.deleteUser(userName);
 		
