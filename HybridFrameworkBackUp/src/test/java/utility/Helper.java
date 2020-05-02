@@ -260,7 +260,7 @@ public class Helper {
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-		element.clear();
+		//element.clear();
 		highLightWebElement(driver, element);
 		Helper.wait(1, "wait");
 		element.sendKeys(data);
