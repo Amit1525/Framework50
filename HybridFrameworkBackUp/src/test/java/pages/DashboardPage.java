@@ -46,6 +46,17 @@ public class DashboardPage {
 	By leaveStatusCancelledLocator = By.xpath("//a[contains(text(),'Cancelled')]");
 	By footerLocator = By.xpath("//div[@id='footer']");
 	
+	By reportLinkUnderLeaveLocator = By.xpath("(//a[text()='Reports'])[2]");
+	By leaveUsageReportLocator = By.xpath("//a[text()='Leave Entitlements and Usage Report']");
+	By generateForSelectLocator = By.xpath("//label[text()='Generate For']//following::select[1]");
+	By generateForEmpLocator = By.xpath("//label[text()='Generate For']//following::select[1]");
+	By enterEmpNameforReportLocator = By.xpath("//label[text()='Employee']//following::input[1]");
+	By fromDateDrpDwnLocator = By.xpath("//label[text()='From']//following::select[1]");
+	By viewBtnLocator = By.xpath("//input[@id='viewBtn']");
+	By leavesTableGeneratedLocator = By.xpath("//table[@class='table nosort']");
+	By empRequiredLocator = By.xpath("//span[text()='Required']");
+	
+	
 	
 	public DashboardPage(WebDriver driver)
 	{
@@ -125,6 +136,35 @@ public class DashboardPage {
 			Helper.waitForWebElementAndClick(driver, logoutLocator, "Click on logout link");
 		}
 	}
+	
+	public void generateLeaveReport(String EmpName)
+	{
+		Helper.waitForWebElementAndClick(driver, dashboardLinkLocator, "Click on Dashboard link after login");
+		Helper.waitForWebElementAndJustMouseHoverToElement(driver, leaveLinkLocator, 0.5, "Mouse over to Leave Link");
+		Helper.waitForWebElementAndJustMouseHoverToElement(driver, reportLinkUnderLeaveLocator, 0.5, "Mouse over to Report link under leave");
+		Helper.waitForWebElementAndMouseHoverToElementAndClick(driver, reportLinkUnderLeaveLocator, leaveUsageReportLocator, 1, "Mouse over and click on EntlUsageReport");
+		Helper.waitForWebElementAndSelectDropdownWithVisibleText(driver, generateForEmpLocator, "Employee", "Select Employee from dropdown");
+		Helper.waitForWebElementAndType(driver, enterEmpNameforReportLocator, EmpName, "Enter Employee Name");
+		Helper.waitForWebElementAndPressTABkey(driver, enterEmpNameforReportLocator);
+		Helper.waitForWebElementAndSelectDropdownWithVisibleText(driver, fromDateDrpDwnLocator, "2015-01-01 - 2015-12-31", "select period");
+		Helper.waitForWebElementAndClick(driver, viewBtnLocator, "Click on View Button");
+		Helper.captureScreenshot(driver);
+		Helper.justScrollToTheElement(driver, welcomeMessageLocator, "Scroll to Element");
+		Helper.waitForWebElementAndClick(driver, welcomeMessageLocator, "click on Welcome Message");
+		Helper.waitForWebElementAndClick(driver, logoutLocator, "Click on logout link");
+		
+		/*
+		 * if(Helper.waitForWebElementToBeDisplayed(driver, empRequiredLocator,
+		 * "wait is Required is displayed")) {
+		 * Helper.waitForWebElementAndClearInputField(driver,
+		 * enterEmpNameforReportLocator, "Clear Emp Field");
+		 * Helper.waitForWebElementAndType(driver, enterEmpNameforReportLocator,
+		 * EmpName, "Enter Employee Name"); } else { return; }
+		 */
+	
+	}
+	
+
 	
 
 }

@@ -40,4 +40,15 @@ public class TestDashboardPage extends BaseClass{
 		dashboard.clearOldLeaves();
 	} 
 	
+	@Test (priority = 3, dataProvider = "excelAppData", dataProviderClass = DataProviderClassExcel.class)
+	public void generateLeaveReportForEmp(String EmpName, String userName, String password)
+	{
+		logger = reports.createTest("Generate Leaves Report Test");
+		login = PageFactory.initElements(driver, LoginPage.class);
+		dashboard = PageFactory.initElements(driver, DashboardPage.class);
+		login.signIntoApplication(DataProviderFactory.getExcel().getCellData("Admin", 0, 0), DataProviderFactory.getExcel().getCellData("Admin", 0, 1));
+		dashboard.generateLeaveReport(EmpName);
+		
+	}
+	
 }

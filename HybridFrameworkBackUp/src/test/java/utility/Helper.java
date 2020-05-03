@@ -65,6 +65,35 @@ public class Helper {
 			
 	} */
 	
+	public static boolean waitForWebElementToBeDisplayed(WebDriver driver, By locator, String stepInfo)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		if(element.isDisplayed())
+		{return true;}else{return false;}
+	}
+	
+/*	public static void selectCalendarDateMMMyyyy(WebDriver driver,By monthYearLocator,By previousMonthLocator,By nextMonthLocator,By allDatesLocator, String monthInMMMyyyy,String day,String stepInfo)
+	{
+		
+		while(true)
+		{
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			WebElement monthElement = wait.until(ExpectedConditions.elementToBeClickable(monthYearLocator));
+			WebElement allDatesElement = wait.until(ExpectedConditions.elementToBeClickable(allDatesLocator));
+			WebElement nextMonthElement = wait.until(ExpectedConditions.elementToBeClickable(nextMonthLocator));
+			WebElement previousMonthElement = wait.until(ExpectedConditions.elementToBeClickable(previousMonthLocator));
+			
+			if(monthElement.getText().equalsIgnoreCase(monthInMMMyyyy))
+					break;
+			else
+				nextMonthElement.click();
+		}
+		
+		//Write table all row xPath and then use [contains(text(),'')] function and then pass Date Variable as [contains(text(),"+Data+")] 
+			
+	} */
+	
 	public static void waitForWebElementAndPerformDragNDrop(WebDriver driver, By srcLocator, By destLocator, String stepInfo) 
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -98,21 +127,24 @@ public class Helper {
 		act.dragAndDropBy(element1, XCordinates, YCordinates).perform();//Perform method is a must when using Actions class.
 	}
 	
-	public static void waitForWebElementAndMouseHoverToElementAndClick(WebDriver driver,By srcLocator,By destLocator,int waitTimeInSeconds,String stepInfo)
+	public static void waitForWebElementAndMouseHoverToElementAndClick(WebDriver driver,By srcLocator,By destLocator,double waitTimeInSeconds,String stepInfo)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(srcLocator));
 		WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(destLocator));
 		Actions act = new Actions(driver);
-		act.moveToElement(element1).pause(Duration.ofSeconds(waitTimeInSeconds)).click(element2).build().perform();
+		highLightWebElement(driver, element1);
+		highLightWebElement(driver, element2);
+		act.moveToElement(element1).pause(Duration.ofSeconds((long) waitTimeInSeconds)).click(element2).build().perform();
 	}
 	
-	public static void waitForWebElementAndJustMouseHoverToElement(WebDriver driver,By srcLocator,int waitTimeInSeconds,String stepInfo)
+	public static void waitForWebElementAndJustMouseHoverToElement(WebDriver driver,By srcLocator,double waitTimeInSeconds,String stepInfo)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(srcLocator));
 		Actions act = new Actions(driver);
-		act.moveToElement(element1).pause(Duration.ofSeconds(waitTimeInSeconds)).build().perform();
+		highLightWebElement(driver, element1);
+		act.moveToElement(element1).pause(Duration.ofSeconds((long) waitTimeInSeconds)).build().perform();
 	}
 	
 	
@@ -271,7 +303,7 @@ public class Helper {
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-		//element.clear();
+		element.clear();
 		highLightWebElement(driver, element);
 		Helper.wait(1, "wait");
 		element.sendKeys(data);
@@ -373,7 +405,7 @@ public class Helper {
 		return element;
 	}
 	
-	public static WebElement waitForWebElement(WebDriver driver, String xpath, int time) {
+	public static WebElement waitForWebElementEvery1Second(WebDriver driver, String xpath, int time) {
 
 		WebElement element = null;
 		for (int i = 0; i < time; i++) {
