@@ -64,14 +64,7 @@ public class Helper {
 		//Write table all row xPath and then use [contains(text(),'')] function and then pass Date Variable as [contains(text(),"+Data+")] 
 			
 	} */
-	
-	public static boolean waitForWebElementToBeDisplayed(WebDriver driver, By locator, String stepInfo)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-		if(element.isDisplayed())
-		{return true;}else{return false;}
-	}
+
 	
 /*	public static void selectCalendarDateMMMyyyy(WebDriver driver,By monthYearLocator,By previousMonthLocator,By nextMonthLocator,By allDatesLocator, String monthInMMMyyyy,String day,String stepInfo)
 	{
@@ -93,6 +86,14 @@ public class Helper {
 		//Write table all row xPath and then use [contains(text(),'')] function and then pass Date Variable as [contains(text(),"+Data+")] 
 			
 	} */
+	
+	public static boolean waitForWebElementToBeDisplayed(WebDriver driver, By locator, String stepInfo)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		if(element.isDisplayed())
+		{return true;}else{return false;}
+	}
 	
 	public static void waitForWebElementAndPerformDragNDrop(WebDriver driver, By srcLocator, By destLocator, String stepInfo) 
 	{
@@ -428,9 +429,9 @@ public class Helper {
 	}
 	
 	
-	public static void wait(int time, String stepInfo) {
+	public static void wait(double time, String stepInfo) {
 		try {
-			Thread.sleep(time*1000);
+			Thread.sleep((int)(time*1000));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -477,7 +478,28 @@ public class Helper {
 		
 		Reporter.log("LOG INFO: "+stepInfo, true);
 
-	}	
+	}
+	
+	/*	public static void selectCalendarDateMMMyyyy(WebDriver driver,By monthYearLocator,By previousMonthLocator,By nextMonthLocator,By allDatesLocator, String monthInMMMyyyy,String day,String stepInfo)
+	{
+		
+		while(true)
+		{
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			WebElement monthElement = wait.until(ExpectedConditions.elementToBeClickable(monthYearLocator));
+			WebElement allDatesElement = wait.until(ExpectedConditions.elementToBeClickable(allDatesLocator));
+			WebElement nextMonthElement = wait.until(ExpectedConditions.elementToBeClickable(nextMonthLocator));
+			WebElement previousMonthElement = wait.until(ExpectedConditions.elementToBeClickable(previousMonthLocator));
+			
+			if(monthElement.getText().equalsIgnoreCase(monthInMMMyyyy))
+					break;
+			else
+				nextMonthElement.click();
+		}
+		
+		//Write table all row xPath and then use [contains(text(),'')] function and then pass Date Variable as [contains(text(),"+Data+")] 
+			
+	} */
 
 }
 

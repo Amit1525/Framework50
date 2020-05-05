@@ -139,19 +139,21 @@ public class DashboardPage {
 	
 	public void generateLeaveReport(String EmpName)
 	{
-		Helper.waitForWebElementAndClick(driver, dashboardLinkLocator, "Click on Dashboard link after login");
-		Helper.waitForWebElementAndJustMouseHoverToElement(driver, leaveLinkLocator, 0.5, "Mouse over to Leave Link");
-		Helper.waitForWebElementAndJustMouseHoverToElement(driver, reportLinkUnderLeaveLocator, 0.5, "Mouse over to Report link under leave");
-		Helper.waitForWebElementAndMouseHoverToElementAndClick(driver, reportLinkUnderLeaveLocator, leaveUsageReportLocator, 1, "Mouse over and click on EntlUsageReport");
-		Helper.waitForWebElementAndSelectDropdownWithVisibleText(driver, generateForEmpLocator, "Employee", "Select Employee from dropdown");
-		Helper.waitForWebElementAndType(driver, enterEmpNameforReportLocator, EmpName, "Enter Employee Name");
-		Helper.waitForWebElementAndPressTABkey(driver, enterEmpNameforReportLocator);
-		Helper.waitForWebElementAndSelectDropdownWithVisibleText(driver, fromDateDrpDwnLocator, "2015-01-01 - 2015-12-31", "select period");
-		Helper.waitForWebElementAndClick(driver, viewBtnLocator, "Click on View Button");
-		Helper.captureScreenshot(driver);
-		Helper.justScrollToTheElement(driver, welcomeMessageLocator, "Scroll to Element");
-		Helper.waitForWebElementAndClick(driver, welcomeMessageLocator, "click on Welcome Message");
-		Helper.waitForWebElementAndClick(driver, logoutLocator, "Click on logout link");
+		//Helper.waitForWebElementAndClick(driver, dashboardLinkLocator, "Click on Dashboard link after login");
+				Helper.waitForWebElementAndClick(driver, leaveLinkLocator, "click on leave link");
+				//Helper.waitForWebElementAndJustMouseHoverToElement(driver, leaveLinkLocator, 0.5, "Mouse over to Leave Link");
+				Helper.waitForWebElementAndJustMouseHoverToElement(driver, reportLinkUnderLeaveLocator, 0.5, "Mouse over to Report link under leave");
+				Helper.waitForWebElementAndMouseHoverToElementAndClick(driver, reportLinkUnderLeaveLocator, leaveUsageReportLocator, 1, "Mouse over and click on EntlUsageReport");
+				Helper.waitForWebElementAndSelectDropdownWithVisibleText(driver, generateForEmpLocator, "Employee", "Select Employee from dropdown");
+				Helper.waitForWebElementAndType(driver, enterEmpNameforReportLocator, EmpName, "Enter Employee Name");
+				Helper.waitForWebElementAndPressTABkey(driver, enterEmpNameforReportLocator);
+				Helper.waitForWebElementAndSelectDropdownWithVisibleText(driver, fromDateDrpDwnLocator, "2015-01-01 - 2015-12-31", "select period");
+				Helper.waitForWebElementAndClick(driver, viewBtnLocator, "Click on View Button");
+				Helper.captureScreenshot(driver);
+				Helper.justScrollToTheElement(driver, welcomeMessageLocator, "Scroll to Element");
+				Helper.waitForWebElementAndClick(driver, welcomeMessageLocator, "click on Welcome Message");
+				Helper.waitForWebElementAndClick(driver, logoutLocator, "Click on logout link");
+				
 		
 		/*
 		 * if(Helper.waitForWebElementToBeDisplayed(driver, empRequiredLocator,
