@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[LOG INFO: wait]]>
@@ -16,21 +16,215 @@
     <line>
       <![CDATA[LOG INFO: Click on Login Button]]>
     </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Admin Tab]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Type Emp Name]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Type Username]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Type password]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Type confirmPassword]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Save Button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Verify success message on save]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: click on Welcome Message]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on logout link]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Enter Username]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Enter Password]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Login Button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Admin Tab]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Type Emp Name]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Type Username]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Type password]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Type confirmPassword]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Save Button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Verify success message on save]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: click on Welcome Message]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on logout link]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Enter Username]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Enter Password]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Login Button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Admin Tab]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Enter Username to be deleted]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Search Button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Select Username to be deleted]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on delete button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on OK button on dialog box]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: click on Welcome Message]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on logout link]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Enter Username]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Enter Password]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Login Button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Admin Tab]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: wait]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Enter Username to be deleted]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on Search Button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Select Username to be deleted]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on delete button]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on OK button on dialog box]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: click on Welcome Message]]>
+    </line>
+    <line>
+      <![CDATA[LOG INFO: Click on logout link]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15994" started-at="2020-05-01T17:25:06Z" finished-at="2020-05-01T17:25:22Z">
+  <suite name="Default suite" duration-ms="53652" started-at="2020-05-05T01:16:10 EDT" finished-at="2020-05-05T01:17:03 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15994" started-at="2020-05-01T17:25:06Z" finished-at="2020-05-01T17:25:22Z">
-      <class name="testcases.TestLoginPage">
-        <test-method status="PASS" signature="setUpReport()[pri:0, instance:testcases.TestLoginPage@2d2e5f00]" name="setUpReport" is-config="true" duration-ms="184" started-at="2020-05-01T13:25:06Z" finished-at="2020-05-01T13:25:06Z">
+    <test name="Default test" duration-ms="53652" started-at="2020-05-05T01:16:10 EDT" finished-at="2020-05-05T01:17:03 EDT">
+      <class name="testcases.TestUserPage">
+        <test-method status="PASS" signature="setUpReport()[pri:0, instance:testcases.TestUserPage@64729b1e]" name="setUpReport" is-config="true" duration-ms="100" started-at="2020-05-05T01:16:10 EDT" finished-at="2020-05-05T01:16:10 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method status="PASS" signature="startBrowserSession()[pri:0, instance:testcases.TestLoginPage@2d2e5f00]" name="startBrowserSession" is-config="true" duration-ms="8257" started-at="2020-05-01T13:25:06Z" finished-at="2020-05-01T13:25:15Z">
+        <test-method status="PASS" signature="startBrowserSession()[pri:0, instance:testcases.TestUserPage@64729b1e]" name="startBrowserSession" is-config="true" duration-ms="6697" started-at="2020-05-05T01:16:10 EDT" finished-at="2020-05-05T01:16:16 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowserSession -->
-        <test-method status="PASS" signature="testLoginToApplication()[pri:0, instance:testcases.TestLoginPage@2d2e5f00]" name="testLoginToApplication" duration-ms="6575" started-at="2020-05-01T13:25:15Z" finished-at="2020-05-01T13:25:21Z">
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.TestUserPage@64729b1e]" name="createUser" duration-ms="14340" started-at="2020-05-05T01:16:17 EDT" data-provider="excelAppData" finished-at="2020-05-05T01:16:31 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fiona Grace]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Fiona_Grac11111113355]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin125]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[LOG INFO: wait]]>
@@ -47,24 +241,297 @@
             <line>
               <![CDATA[LOG INFO: Click on Login Button]]>
             </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Admin Tab]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Type Emp Name]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Type Username]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Type password]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Type confirmPassword]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Save Button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Verify success message on save]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: click on Welcome Message]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on logout link]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testLoginToApplication -->
-        <test-method status="PASS" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestLoginPage@2d2e5f00]" name="addResultToReport" is-config="true" duration-ms="503" started-at="2020-05-01T13:25:21Z" finished-at="2020-05-01T13:25:22Z">
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestUserPage@64729b1e]" name="addResultToReport" is-config="true" duration-ms="224" started-at="2020-05-05T01:16:31 EDT" finished-at="2020-05-05T01:16:31 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLoginToApplication status=SUCCESS method=TestLoginPage.testLoginToApplication()[pri:0, instance:testcases.TestLoginPage@2d2e5f00] output=LOG INFO: wait]]]>
+                <![CDATA[[TestResult name=createUser status=SUCCESS method=TestUserPage.createUser(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.TestUserPage@64729b1e] output=LOG INFO: wait]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addResultToReport -->
-        <test-method status="PASS" signature="closeBrowserSession()[pri:0, instance:testcases.TestLoginPage@2d2e5f00]" name="closeBrowserSession" is-config="true" duration-ms="640" started-at="2020-05-01T13:25:22Z" finished-at="2020-05-01T13:25:22Z">
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.TestUserPage@64729b1e]" name="createUser" duration-ms="13649" started-at="2020-05-05T01:16:31 EDT" data-provider="excelAppData" finished-at="2020-05-05T01:16:45 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hannah Flores]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hanna_222222232323]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin125]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Enter Username]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Enter Password]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Login Button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Admin Tab]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Type Emp Name]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Type Username]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Type password]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Type confirmPassword]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Save Button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Verify success message on save]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: click on Welcome Message]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on logout link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestUserPage@64729b1e]" name="addResultToReport" is-config="true" duration-ms="42" started-at="2020-05-05T01:16:45 EDT" finished-at="2020-05-05T01:16:45 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUser status=SUCCESS method=TestUserPage.createUser(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.TestUserPage@64729b1e] output=LOG INFO: wait]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addResultToReport -->
+        <test-method status="PASS" signature="deleteUsers(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.TestUserPage@64729b1e]" name="deleteUsers" duration-ms="8834" started-at="2020-05-05T01:16:45 EDT" data-provider="excelAppData" finished-at="2020-05-05T01:16:54 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fiona Grace]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Fiona_Grac11111113355]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin125]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Enter Username]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Enter Password]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Login Button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Admin Tab]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Enter Username to be deleted]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Search Button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Select Username to be deleted]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on delete button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on OK button on dialog box]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: click on Welcome Message]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on logout link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteUsers -->
+        <test-method status="PASS" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestUserPage@64729b1e]" name="addResultToReport" is-config="true" duration-ms="39" started-at="2020-05-05T01:16:54 EDT" finished-at="2020-05-05T01:16:54 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteUsers status=SUCCESS method=TestUserPage.deleteUsers(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.TestUserPage@64729b1e] output=LOG INFO: wait]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addResultToReport -->
+        <test-method status="PASS" signature="deleteUsers(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.TestUserPage@64729b1e]" name="deleteUsers" duration-ms="8635" started-at="2020-05-05T01:16:54 EDT" data-provider="excelAppData" finished-at="2020-05-05T01:17:03 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hannah Flores]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hanna_222222232323]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin125]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Enter Username]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Enter Password]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Login Button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Admin Tab]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: wait]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Enter Username to be deleted]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on Search Button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Select Username to be deleted]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on delete button]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on OK button on dialog box]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: click on Welcome Message]]>
+            </line>
+            <line>
+              <![CDATA[LOG INFO: Click on logout link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteUsers -->
+        <test-method status="PASS" signature="addResultToReport(org.testng.ITestResult)[pri:0, instance:testcases.TestUserPage@64729b1e]" name="addResultToReport" is-config="true" duration-ms="36" started-at="2020-05-05T01:17:03 EDT" finished-at="2020-05-05T01:17:03 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteUsers status=SUCCESS method=TestUserPage.deleteUsers(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.TestUserPage@64729b1e] output=LOG INFO: wait]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addResultToReport -->
+        <test-method status="PASS" signature="closeBrowserSession()[pri:0, instance:testcases.TestUserPage@64729b1e]" name="closeBrowserSession" is-config="true" duration-ms="612" started-at="2020-05-05T01:17:03 EDT" finished-at="2020-05-05T01:17:03 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserSession -->
-      </class> <!-- testcases.TestLoginPage -->
+      </class> <!-- testcases.TestUserPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

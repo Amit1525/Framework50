@@ -22,12 +22,13 @@ public class TestUserPage extends BaseClass{
 		
 		 login = PageFactory.initElements(driver, LoginPage.class);
 		 user = PageFactory.initElements(driver, UserPage.class);
+		 
 		 login.verifyBeforeLogin();
 		 login.verifySocialLinks();
 		 login.signIntoApplication(DataProviderFactory.getExcel().getCellData("Admin", 0, 0), DataProviderFactory.getExcel().getCellData("Admin", 0, 1));
-		 login.verifyAfterLogin();		 
-		 user.addUser(EmpName, userName, password); 
+		 login.verifyAfterLogin();		
 		 
+		 user.addUser(EmpName, userName, password); 
 		 
 	}
 	
@@ -35,6 +36,8 @@ public class TestUserPage extends BaseClass{
 	public void deleteUsers(String EmpName, String userName, String password)
 	{
 		logger = reports.createTest("Regression Test - Delete the Created User Test");
+		login = PageFactory.initElements(driver, LoginPage.class);
+		 user = PageFactory.initElements(driver, UserPage.class);
 		login.signIntoApplication(DataProviderFactory.getExcel().getCellData("Admin", 0, 0), DataProviderFactory.getExcel().getCellData("Admin", 0, 1));
 		user.deleteUser(userName);
 		

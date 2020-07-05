@@ -30,7 +30,7 @@ public class ExcelDataProvider {
 		 */
 
 		try {
-			wb = new XSSFWorkbook(new FileInputStream(new File(System.getProperty("user.dir")+"/DataFiles/CRMData.xlsx")));
+			wb = new XSSFWorkbook(new FileInputStream(new File(System.getProperty("user.dir")+"/TestData/CRMData.xlsx")));
 		} catch (FileNotFoundException e) {
 
 		} catch (IOException e) {

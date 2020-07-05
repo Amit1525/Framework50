@@ -11,7 +11,7 @@ public class UserPage {
 	String checkBoxUsername;
 	By adminTabLocator = By.xpath("//b[text()='Admin']");
 	By addButtonLocator = By.xpath("//input[@value='Add']");
-	By empNameLocator = By.xpath("//label[text()='Employee Name']//following::input[1]");
+	By empNameLocator = By.xpath("//input[@id='systemUser_employeeName_empName']");
 	By usernameLocator = By.xpath("//label[text()='Username']//following::input[1]");
 	By passwordLocator = By.xpath("//label[text()='Password']//following::input[1]");
 	By confirmPasswordLocator = By.xpath("//label[text()='Confirm Password']//following::input[1]");
@@ -34,13 +34,15 @@ public class UserPage {
 	public void addUser(String EmpName, String userName, String password)
 	{
 		Helper.waitForWebElementAndClick(driver, adminTabLocator, "Click on Admin Tab");
-		Helper.waitForWebElementAndClick(driver, addButtonLocator, "Click on Add Button");
+		Helper.waitForWebElementAndMouseHoverToElementAndClick(driver, addButtonLocator, addButtonLocator, 0.5, "Click on Add btn");
+		//Helper.waitForWebElementAndClick(driver, addButtonLocator, "Click on Add Button");
 		Helper.waitForWebElementAndType(driver, empNameLocator, EmpName, "Type Emp Name");
 		Helper.waitForWebElementAndType(driver, usernameLocator, userName, "Type Username");
 		Helper.waitForWebElementAndType(driver, passwordLocator, password, "Type password");
 		Helper.waitForWebElementAndType(driver, confirmPasswordLocator, password, "Type confirmPassword");
 		Helper.waitForWebElementAndClick(driver, saveButtonLocator, "Click on Save Button");	
 		Helper.verifyPartialMessages(driver, successMessageLocator, "Saved", "Verify success message on save");
+		Helper.justScrollToTheElement(driver, welcomeMessageLocator, "Scroll to welcome mesg");
 		Helper.waitForWebElementAndClick(driver, welcomeMessageLocator, "click on Welcome Message");
 		Helper.waitForWebElementAndClick(driver, logoutLocator, "Click on logout link");
 		
@@ -55,6 +57,7 @@ public class UserPage {
 		Helper.waitForWebElementAndClick(driver, By.xpath("//a[contains(text(),'"+ userName +"')]//preceding::input[1]"), "Select Username to be deleted");
 		Helper.waitForWebElementAndClick(driver, deleteButtonLocator, "Click on delete button");
 		Helper.waitForWebElementAndClick(driver, deleteDialogBtnLocator, "Click on OK button on dialog box");
+		Helper.justScrollToTheElement(driver, welcomeMessageLocator, "Scroll to welcome mesg");
 		Helper.waitForWebElementAndClick(driver, welcomeMessageLocator, "click on Welcome Message");
 		Helper.waitForWebElementAndClick(driver, logoutLocator, "Click on logout link");
 				
